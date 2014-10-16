@@ -1,0 +1,31 @@
+{
+  "name": "facelift",
+  "version": "0.0.1",
+  "description": "A small script to search Facebook posts on a given page by a matching keyword.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ajam/facelift"
+  },
+  "keywords": [
+    "Facebook",
+    "scrape",
+    "regex",
+    "posts"
+  ],
+  "author": "Michael Keller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajam/facelift/issues"
+  },
+  "homepage": "https://github.com/ajam/facelift",
+  "dependencies": {
+    "colors": "^1.0.3",
+    "request": "^2.45.0",
+    "underscore": "^1.7.0",
+    "underscore.string": "^2.3.3"
+  }
+}
