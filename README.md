@@ -3,7 +3,7 @@ Facelift
 
 A small script to search Facebook posts on a given page by a matching keyword. Used in [Terms of Service](http://projects.aljazeera.net/2014/terms-of-service) for finding mentions of the Snapshot program by Progressive auto insurance.
 
-Matching posts are 
+Matching posts are saved as an array of Facebook post objects in `out/matching_posts.json`.
 
 ## Usage
 
