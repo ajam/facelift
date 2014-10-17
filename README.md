@@ -1,15 +1,19 @@
 Facelift
 ===
 
-A small script to search Facebook posts on a given page by a matching keyword. Used in [Terms of Service](http://projects.aljazeera.net/2014/terms-of-service) for finding mentions of the Snapshot program by Progressive auto insurance.
+A small script to search Facebook posts and (post comments) on a given page by a matching keyword. Used in [Terms of Service](http://projects.aljazeera.net/2014/terms-of-service) for finding mentions of the Snapshot program by Progressive auto insurance customers.
 
-Matching posts are saved as an array of Facebook post objects in `out/matching_posts.json`.
+Matching posts are saved as an array of Facebook post objects in `out/matching_posts.json` every ten matches. Searches are case-insensitive.
+
+## Notice 
+
+This is not a comprehensive library by any means. It is a small script to download paginated data from one Facebook API endpoint.
 
 ## Usage
 
 Set the following values in `config.json`
 
-* `user_access_token`: Obtain a User Access Token for the Facebook API. Read more about tokens <https://developers.facebook.com/docs/facebook-login/access-tokens>
+* `user_access_token`: Obtain a temporary access token for the Facebook API. You'll have to create an app first. Learn more at <https://developers.facebook.com/tools/accesstoken/>
 * `page_id`: The ID of the Facebook page you want to point Facelift at.
 * `keyword`: The desired keyword to match on.
 * `since`: A Unix timestamp of the earliest you want to start searching from. Defaults to `0` if not set.
@@ -25,6 +29,17 @@ A sample configuration would be:
 }
 ````
 
-## TODO
+To run
 
-I'm using a very simple implementation with `underscore.string`. Supporting a proper regex would be more flexible. Pull requests welcome!
+````
+node src/index.js
+````
+or
+
+````
+npm start
+````
+
+## License
+
+MIT

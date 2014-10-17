@@ -1,9 +1,10 @@
 {
   "name": "facelift",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A small script to search Facebook posts on a given page by a matching keyword.",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,8 +25,6 @@
   "homepage": "https://github.com/ajam/facelift",
   "dependencies": {
     "colors": "^1.0.3",
-    "request": "^2.45.0",
-    "underscore": "^1.7.0",
-    "underscore.string": "^2.3.3"
+    "request": "^2.45.0"
   }
 }
