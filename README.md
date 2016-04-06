@@ -1,6 +1,8 @@
 Facelift
 ===
 
+**This repository is no longer being maintained. Please use [https://github.com/mhkeller/facelift2](https://github.com/mhkeller/facelift2).**
+
 A small script to search Facebook posts and (post comments) on a given page by a matching keyword. Used in (the soon-to-be-released) [Terms of Service](http://projects.aljazeera.net/2014/terms-of-service) for finding mentions of the Snapshot program by Progressive auto insurance customers.
 
 Matching posts are saved as an array of Facebook post objects in `out/matching_posts.json` every ten matches. Searches are case-insensitive.
